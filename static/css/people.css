@@ -1,0 +1,25 @@
+.peoplecontent{
+    min-height: 500px;
+    margin: 10px 10px 10px 10px;
+}
+.peoplecontent h1{
+    text-align: left;
+}
+.people{
+    display: block;
+}
+.crew{
+    display: inline-block;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+}
+.crew img{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.crew .peopleimage{
+    display: block;
+    margin-left: auto;
+}
