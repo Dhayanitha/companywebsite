@@ -36,19 +36,19 @@ Publish the website in the given URL.
 <body>
     <div class="container">
     <div class="banner">
-        Silicon Private Limited.
+        D.Silicon Private Limited.
     </div>
     <div class="menu">
         <div class="menuitem"><a href="/home">Home</a></div> 
         <div class="menuitem"><a href="/products">Products</a></div> 
-        <div class="menuitem"><a>People</a></div>
-        <div class="menuitem"><a>Contact Us</a></div> 
+        <div class="menuitem"><a href="/people">People</a></div>
+        <div class="menuitem"><a href="/contact">Contact Us</a></div> 
     </div><div class="content">
     {% block content %}    
     {% endblock  %}
     </div>
     <div class="footer">
-        Copyright © 2020 Silicon Private Limited, Developed by Obed Otto.
+        Copyright © 2020 D.Silicon Private Limited, Developed by Dhayanitha.
     </div>
     </div>
 </body>
@@ -84,35 +84,175 @@ Publish the website in the given URL.
 {% extends "website/base.html" %}
 
 {% block content %}
-    <div class="productcontent">    
-    <h1>Our Premium Products</h1>
-    <div class="productitems">
-        <div class="productitem"> 
-            <div class="itemimage">
-            <img src="/static/img/c1.jpg" alt="product image">
-            </div>
-            <div class="itemname">4GB DDRA4 laptop memory</div>
-            <div class="itemprice">Price: Rs.2000.00 </div>
-        </div>
-        <div class="productitem"> 
-            <div class="itemimage">
-            <img src="/static/img/c2.jpg"  alt="product image">
-            </div>
-            <div class="itemname">1TB Laptop HDD</div>
-            <div class="itemprice">Price: Rs.5000.00 </div>
-        </div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/c1.jpg" alt="product image">
     </div>
+    <div class="itemname">4GB DDRA4 laptop memory</div>
+    <div class="itemprice">Price: Rs.2000.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/c2.jpg" alt="product image">
     </div>
+    <div class="itemname">1TB Laptop HDD</div>
+    <div class="itemprice">Price: Rs.5000.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/c3.jpg" alt="product image">
+    </div>
+    <div class="itemname">144 pin SDRAM</div>
+    <div class="itemprice">Price: Rs.3500.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/graphicscard.jpg" alt="product image">
+    </div>
+    <div class="itemname">graphics card</div>
+    <div class="itemprice">Price: Rs.12000.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/motherboard.jpg" alt="product image">
+    </div>
+    <div class="itemname">motherboard</div>
+    <div class="itemprice">Price: Rs.3900.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/RAM.jpg" alt="product image">
+    </div>
+    <div class="itemname">RAM</div>
+    <div class="itemprice">Price: Rs.3200.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/mouse.jpg" alt="product image">
+    </div>
+    <div class="itemname">mouse</div>
+    <div class="itemprice">Price: Rs.500.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/SATA HDD.jpg" alt="product image">
+    </div>
+    <div class="itemname">SATA HDD</div>
+    <div class="itemprice">Price: Rs.2500.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/keyboard.jpg" alt="product image">
+    </div>
+    <div class="itemname">keyboard</div>
+    <div class="itemprice">Price: Rs.2500.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/webcam.jpg" alt="product image">
+    </div>
+    <div class="itemname">webcam</div>
+    <div class="itemprice">Price: Rs.1000.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/RYZEN 7 3700X.jpg" alt="product image">
+    </div>
+    <div class="itemname">RYZEN 7 3700X</div>
+    <div class="itemprice">Price: Rs.28000.00 </div>
+</div>
+<div class="productitem">
+    <div class="itemimage">
+        <img src="/static/img/broadbandmodems.jpg" alt="product image">
+        <div class="itemname">Broadband Modems</div>
+        <div class="itemprice">Price: Rs.2800.00 </div>
+    </div>
+
+</div>
+</div>
 {% endblock  %}
 ```
-## OUTPUT:
-![output](./static/img/output1.jpg)
+###people.html
+```
+{% extends "website/base.html" %}
 
-![output](./static/img/output1.jpg)
+{% block content %}
+<div class="peoplecontent">
+    <h1>crew of the company</h1>
+    <div class="people">
+        <div class="crew">
+            <div class="peopleimage">
+                <img src="/static/img/CEO1.jpg" alt="people image">
+            </div>
+            <div class="personname">Idris</div>
+            <div class="designation">CEO of silicon labs</div>
+
+        </div>
+         <div class="crew">
+            <div class="peopleimage">
+                <img src="/static/img/seniormanager.jpg" alt="people image">
+            </div>
+            <div class="personname">Mr.Lee</div>
+            <div class="designation">Senior Manager of silicon labs</div>
+
+        </div>
+         <div class="crew">
+            <div class="peopleimage">
+                <img src="/static/img/cheif.jpg" alt="people image">
+            </div>
+            <div class="personname">Alisa</div>
+            <div class="designation">Cheif Technology Officer of silicon labs</div>
+
+        </div>
+         <div class="crew">
+            <div class="peopleimage">
+                <img src="/static/img/chairman.jpg" alt="people image">
+            </div>
+            <div class="personname">John</div>
+            <div class="designation"> Chairman of silicon labs</div>
+
+        </div>
+    </div>
+    
+{% endblock  %}
+```
+###contact.html
+```
+{% extends "website/base.html" %}
+
+{% block content %}
+<div class="contactcontent">
+    <h1>CONTACT US</h1>
+    <div class="contacttext">
+        <h2>Meera</h2><br>
+        <h2>D.Silicon products private limited,</h2><br>
+        <h2>123 main street unit 21 Fort.St.George,chennai</h2><br>
+        <h2>contact number- 8061513000</h2><br>
+        <h2>email address- dhayanithasilicon@gmail.com</h2>
+    </div>
+</div>
+{% endblock  %}
+{% extends "website/base.html" %}
+```
+## OUTPUT:
+![output](./static/img/page1.jpg)
+
+![output](./static/img/page2.jpg)
+
+![output](./static/img/page3.jpg)
+
+![output](./static/img/page4.jpg)
 
 ## CODE VALIDATION REPORT:
 ![output](./static/img/report1.jpg)
 
 ![output](./static/img/report2.jpg)
+
+![output](./static/img/report3.jpg)
+
+![output](./static/img/report4.jpg)
+
+![output](./static/img/report5.jpg)
+
 ## RESULT:
-Thus a website is designed for the chip manufacturing company and is hosted in the URL http://demo2.student.saveetha.in:8000/. HTML code is validated.
+Thus a website is designed for the chip manufacturing company and is hosted in the URL http://dhayanitha.student.saveetha.in:8000/. HTML code is validated.
